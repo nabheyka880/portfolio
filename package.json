@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "The website for all of my work. Useful for applications when I apply for games.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "astro": "^7.0.7",
+    "dayjs": "^1.11.21"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true
+  }
+}

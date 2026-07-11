@@ -1,0 +1,63 @@
+---
+import SectionCustom from "../components/SectionCustom.astro"
+import Layout from "../layouts/Layout.astro"
+import Credits from "../components/CreditsFooter.astro" // this is scrapped highkey
+import CreditsText from "../components/CreditsBottom.astro"
+
+import bot1 from "@images/1_bot.PNG"
+import bot2 from "@images/2_bot.PNG"
+import "../styles/global.css"
+import "../styles/index.css"
+
+import dayjs from "dayjs"
+
+const now = dayjs()
+const firstGame = dayjs("2023-07-14")
+const diff = now.diff(firstGame, "year")
+---
+
+<Layout title="work">
+    <!-- <Credits/> -->
+
+    <SectionCustom>
+        <h1>hello there!!</h1>
+        <p>i'm Nab, i'm 15, and i simply like to code!!!</p>
+        <p>i've coded in Roblox Studio for a while and i've made my first game around {diff} years ago!</p>
+    </SectionCustom>
+
+    <SectionCustom>
+        <h1>current projects</h1>
+        <ul>
+            <li>Calamity's Ruin</li>
+            <li>Fractured Genesis</li>
+            <li>The Battle Bricks: Remnant</li>
+        </ul>
+    </SectionCustom>
+
+    <SectionCustom>
+        <h1>other projects or sum 🎉🎉🎉</h1>
+        <p>some of these projects are not open source cause i don't feel safe open sourcing them, sorry..</p>
+        <ul>
+            <li><a href="https://github.com/nabheyka880/Roblox-Moderation-Application">Roblox Moderation Application</a> - moderation Windows app for Roblox (lowk shit)</li>
+            <li><a href="https://github.com/nabheyka880/UBG-Discord-BOT">UBG Discord bot</a> - a Discord bot for a discontinued game of mine (kinda old)</li>
+            <li>All Purpose Discord Bot <i>(aka evil fucking bunny)</i> - a Discord bot for all purposes that i made on my own</li>
+            <div class="bot-images">
+                <img alt="bot's profile" src={bot1.src}/>
+                <img alt="bot's help command" src={bot2.src}/>
+            </div>
+        </ul>
+    </SectionCustom>
+
+    <SectionCustom>
+        <h1>video work</h1>
+        <p>here's some of videos of mine that show my work, enjoy!!</p>
+        <div class="videos">
+            <video controls muted src="/src/assets/videos/knight.mp4"/>
+            <video controls muted src="/src/assets/videos/jarona.mp4"/>
+            <video controls muted src="/src/assets/videos/om-lines.mp4"/>
+            <video controls muted src="/src/assets/videos/settings.mp4"/>
+            <video controls muted src="/src/assets/videos/tbb-r.mp4"/>
+        </div>
+    </SectionCustom>
+    <CreditsText/>
+</Layout>

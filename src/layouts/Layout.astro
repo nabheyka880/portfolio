@@ -1,0 +1,25 @@
+---
+import { Font } from "astro:assets";
+const {title} = Astro.props
+let finalTitle = "nabheyka"
+
+if (title) finalTitle = `${finalTitle} ~ ${title}`
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <Font cssVariable="--font-comic-relief"/>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/src/assets/images/icon.png"/>
+        <title>{finalTitle}</title>
+
+        <meta name="og:title" content="Portfolio"/>
+        <meta name="og:url" content="https://nabheyka.work.vercel.app/"/>
+        <meta name="og:description" content="my portfolio for work!!!"/>
+    </head>
+    <body> 
+        <slot/>
+    </body>
+</html>
