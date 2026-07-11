@@ -4,8 +4,6 @@ import Layout from "../layouts/Layout.astro"
 import Credits from "../components/CreditsFooter.astro" // this is scrapped highkey
 import CreditsText from "../components/CreditsBottom.astro"
 
-import bot1 from "@images/1_bot.PNG"
-import bot2 from "@images/2_bot.PNG"
 import "../styles/global.css"
 import "../styles/index.css"
 
@@ -17,8 +15,6 @@ const diff = now.diff(firstGame, "year")
 ---
 
 <Layout title="work">
-    <!-- <Credits/> -->
-
     <SectionCustom>
         <h1>hello there!!</h1>
         <p>i'm Nab, i'm 15, and i simply like to code!!!</p>
@@ -43,8 +39,8 @@ const diff = now.diff(firstGame, "year")
             <li><a href="https://github.com/nabheyka880/portfolio">this website like right here!</a></li>
             <li>All Purpose Discord Bot <i>(aka evil fucking bunny)</i> - a Discord bot for all purposes that i made on my own</li>
             <div class="bot-images">
-                <img alt="bot's profile" src={bot1.src}/>
-                <img alt="bot's help command" src={bot2.src}/>
+                <img alt="bot's profile" src="/images/1_bot.PNG"/>
+                <img alt="bot's help command" src="/images/2_bot.PNG"/>
             </div>
         </ul>
     </SectionCustom>

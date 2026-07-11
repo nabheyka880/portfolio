@@ -1,8 +1,4 @@
 {
   "extends": "astro/tsconfigs/base",
-  "compilerOptions": {
-    "paths": {
-      "@images/*": ["./src/assets/images/*"]
-    }
-  }
+  "compilerOptions": {}
 }
