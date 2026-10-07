@@ -1,13 +1,20 @@
 ---
+import { Image } from "astro:assets"
+
 import SectionCustom from "../components/SectionCustom.astro"
 import Layout from "../layouts/Layout.astro"
-import Credits from "../components/CreditsFooter.astro" // this is scrapped highkey
 import CreditsText from "../components/CreditsBottom.astro"
 
 import "../styles/global.css"
 import "../styles/index.css"
 
 import dayjs from "dayjs"
+
+import botFirst from "../assets/images/1_bot.png"
+import botSecond from "../assets/images/1_bot.png"
+
+import maxe from "../assets/images/renders/maxe.png"
+import maxe2 from "../assets/images/renders/Maxe2.png"
 
 const now = dayjs()
 const firstGame = dayjs("2023-07-14")
@@ -36,8 +43,10 @@ const diff = now.diff(firstGame, "year")
             <li><a href="https://github.com/nabheyka880/portfolio">this website like right here! (still new to making websites)</a></li>
             <li>All Purpose Discord Bot <i>(aka evil fucking bunny)</i> - a Discord bot for all purposes that i made on my own</li>
             <div class="bot-images">
-                <img alt="bot's profile" src="/images/1_bot.PNG"/>
-                <img alt="bot's help command" src="/images/2_bot.PNG"/>
+                <!-- <img alt="bot's profile" src="/images/1_bot.PNG"/>
+                <img alt="bot's help command" src="/images/2_bot.PNG"/> -->
+                <Image src={botFirst} alt="bot number 1"/>
+                <Image src={botSecond} alt="bot number 2"/>
             </div>
         </ul>
     </SectionCustom>
@@ -56,8 +65,10 @@ const diff = now.diff(firstGame, "year")
     <SectionCustom title="renders i made for fun!!">
         <p>DISCLAIMER: these are renders i make for FUN, i'm not specialized in rendering but i just wanted to put it here cause why not</p>
         <div class="renders">
-            <img src="/images/renders/Maxe2.png"/>
-            <img src="/images/renders/maxe.png"/>
+            <!-- <img src="/images/renders/Maxe2.png"/>
+            <img src="/images/renders/maxe.png"/> -->
+            <Image height=400 src={maxe} alt="sustingus"/>
+            <Image height=400 src={maxe2} alt="sustingus2"/>
         </div>
     </SectionCustom>
     <CreditsText/>

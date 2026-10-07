@@ -1,12 +1,14 @@
 .section-custom {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     font-size: 15px;
 }
 
 div h1 {
-    font-size: 45px;
+    /* font-size: 45px; */
+    font-size: 3em;
     margin-bottom: 10px;
 }
+
 div p {
     margin: 0;
 }

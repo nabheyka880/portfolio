@@ -4,20 +4,21 @@
     border-radius: 5px;
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
 }
+
 .bot-images {margin-top: 20px;}
 
 div {margin-bottom: 20px;}
 
-video {max-height: 400px;}
 .videos {
+    justify-items: center;
+    align-content: center;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 10px;
-    column-gap: 0px;
+    grid-template-columns: repeat(2, 630px);
+    row-gap: 5px;
 }
 
 .renders img {
-    max-height: 400px;
+    /* max-height: 400px; */
     margin-right: 100px;
     filter: drop-shadow(5px 10px 15px rgba(0, 0, 0, 0.6));
 }

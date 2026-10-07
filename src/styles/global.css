@@ -1,6 +1,9 @@
-body {
+main {
     font-family: var(--font-comic-relief);
-    margin: 90px 200px 0px 200px;
+    
+    margin-top: 90px;
+    margin-right: 200px;
+    margin-left: 200px;
 }
 
 a {
@@ -11,5 +14,5 @@ a {
 }
 
 video {
-    max-height: 400px;
+    max-height: 350px;
 }
